@@ -16,3 +16,4 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 ## 💻 Projeto
 Habits é um aplicativo de rastreamento de hábitos diário.
 
+- [Visite o projeto online](https://alimacamila.github.io/nlw-setup)
