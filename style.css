@@ -14,7 +14,7 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 48px;
+  padding: 32px 48px;
   position: fixed;
   width: 100%;
   background-color: #09090a;
@@ -22,22 +22,45 @@ header {
 
 button {
   padding: 16px 24px;
-  border: 1px solid #8B5CF6;
+  border: 1px solid #0EA5E9;
   border-radius: 8px;
   background-color: transparent;
   color: white;
   display: flex;
   align-items: center;
   gap: 12px;
-  font-family: 'Inter';
-  font-style: normal;
-  font-weight: 600;
+  font-family: 'Sofia Sans';
+  font-style: Bold;
   font-size: 16px;
   line-height: 125%;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+}
+
+button p {
+  position: relative;
+  z-index: 10;
+}
+
+button span {
+  position: absolute;
+  width: 0;
+  height: 150px;
+  z-index: 1;
+  background: #0EA5E9;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) skewX(45deg);
+  transition: all 0.25s ease-in-out;
+}
+
+button:hover span {
+  width: 150%;
 }
 
 button:hover {
-  cursor: pointer;
+  color: white;
 }
 
 #form-habits {
@@ -64,7 +87,7 @@ button:hover {
 
 .days {
   display: flex;
-  gap: 48px;
+  gap: 32px;
   margin-left: 32px;
 }
 
@@ -76,7 +99,7 @@ button:hover {
 
 .day div {
   margin-bottom: 8px;
-  font-family: 'Roboto Mono';
+  font-family: 'Sofia Sans';
   font-size: 20px;
   line-height: 125%;
   color: #A1A1AA;
@@ -94,8 +117,8 @@ input {
 }
 
 input:checked {
-  background: #8B5CF6;
-  border: 2px solid #A78BFA;
+  background: #0EA5E9;
+  border: 2px solid #38BDF8;
 }
 
 @media (max-width: 570px) {
